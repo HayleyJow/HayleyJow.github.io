@@ -10,22 +10,34 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed&amp;display=swap">
-    <link rel="stylesheet" href="assets/css/styles.min.css">
-    <link rel="stylesheet" href="assets/css/aos.min.min.css">
+    <link rel="stylesheet" href="assets/css/aos.min.css">
+    <link rel="stylesheet" href="assets/css/extra.css">
+    <link rel="stylesheet" href="assets/css/Skills%20Stuff.css">
 </head>
 
 <body>
     <nav class="navbar navbar-dark navbar-expand-md sticky-top py-3" id="mainNav">
-        <div class="container"><a class="navbar-brand d-flex align-items-center" href="/"><span class="bs-icon-sm bs-icon-circle bs-icon-primary shadow d-flex justify-content-center align-items-center me-2 bs-icon"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-bezier">
-                        <path fill-rule="evenodd" d="M0 10.5A1.5 1.5 0 0 1 1.5 9h1A1.5 1.5 0 0 1 4 10.5v1A1.5 1.5 0 0 1 2.5 13h-1A1.5 1.5 0 0 1 0 11.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm10.5.5A1.5 1.5 0 0 1 13.5 9h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1a1.5 1.5 0 0 1-1.5-1.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zM6 4.5A1.5 1.5 0 0 1 7.5 3h1A1.5 1.5 0 0 1 10 4.5v1A1.5 1.5 0 0 1 8.5 7h-1A1.5 1.5 0 0 1 6 5.5v-1zM7.5 4a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z"></path>
-                        <path d="M6 4.5H1.866a1 1 0 1 0 0 1h2.668A6.517 6.517 0 0 0 1.814 9H2.5c.123 0 .244.015.358.043a5.517 5.517 0 0 1 3.185-3.185A1.503 1.503 0 0 1 6 5.5v-1zm3.957 1.358A1.5 1.5 0 0 0 10 5.5v-1h4.134a1 1 0 1 1 0 1h-2.668a6.517 6.517 0 0 1 2.72 3.5H13.5c-.123 0-.243.015-.358.043a5.517 5.517 0 0 0-3.185-3.185z"></path>
-                    </svg></span><span>Hayley Jowitt</span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+        <div class="container"><a class="navbar-brand d-flex align-items-center" href="/"><span class="bs-icon-sm bs-icon-circle bs-icon-primary shadow d-flex justify-content-center align-items-center me-2 bs-icon" style="text-align: center;">HJ</span><span>Hayley Jowitt</span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="CV.html">CV</a></li>
-                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-                </ul><button class="btn btn-primary shadow" type="button" onclick="CopyEmail()">Copy Email</button>
+                </ul><script>
+var email = "hayley.jowitt@uq.net.au";
+</script>
+
+<button class="btn btn-primary shadow" type="button" onclick="copying_function(email)">Copy Email</button>
+<script>
+function copying_function(string) {
+ // string.select();
+  const el = document.createElement('textarea');
+  el.value = string;
+  document.body.appendChild(el);
+  el.select();
+  document.execCommand('copy');
+    document.body.removeChild(el);
+}
+</script>
             </div>
         </div>
     </nav>
@@ -41,7 +53,7 @@
                             <div class="container">
                                 <div class="text-center p-4 p-lg-5" style="overflow: visible;">
                                     <p class="fw-bold text-primary mb-2">Digital Resume</p>
-                                    <h1 class="display-3 fw-bold mb-4"><span style="color: rgb(0, 0, 0);">Hayley Jowitt</span></h1><button class="btn btn-primary fs-5 shadow me-2 py-2 px-4" type="button" style="background: #3d77ff;">Projects</button><a class="btn btn-light fs-5 shadow py-2 px-4" role="button" href="CV.html">CV</a>
+                                    <h1 class="display-3 fw-bold mb-4"><span style="color: rgb(0, 0, 0);">Hayley Jowitt</span></h1><a class="btn btn-primary fs-5 shadow me-2 py-2 px-4" role="button" style="background: #3d77ff;" href="CV.html">CV</a>
                                 </div>
                             </div>
                         </section>
@@ -58,21 +70,35 @@
                         <h1 class="fw-bold">Sum to Me</h1>
                     </div>
                 </div>
-                <div class="col-12 col-lg-10 mx-auto" style="margin-top: -112px;">
-                    <div class="position-relative" style="display: flex;flex-wrap: wrap;justify-content: flex-end;height: 827.275px;">
-                        <div style="position: relative;flex: 0 0 45%;transform: translate3d(-15%, 35%, 0);"><img class="img-fluid" data-bss-parallax="" data-bss-parallax-speed="0.5" data-aos="fade" data-aos-duration="600" src="assets/img/products/3.jpg"></div>
-                        <div style="position: relative;flex: 0 0 45%;transform: translateX(-34px) translateY(225px);"><img class="img-fluid" data-bss-parallax="" data-bss-parallax-speed="0.3" data-aos="fade" data-aos-duration="600" src="assets/img/products/2.jpg"></div>
-                        <div style="position: relative;flex: 0 0 60%;transform: translate3d(0, 0%, 0);"><img class="img-fluid" data-bss-parallax="" data-bss-parallax-speed="0.4" data-aos="fade" data-aos-duration="600" src="assets/img/products/1.jpg"></div>
-                    </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-lg-4 offset-lg-0">
+                    <div></div><video class="vid-1" controls="" width="100%" height="100%" autoplay="" loop="" muted="">
+                        <source src="C:\Users\hayle\Videos\WEbsite\clip 3.mp4" type="video/mp4">
+                    </video>
+                    <h3 class="vid-1-heading" style="text-align: center;margin-bottom: 0;padding-bottom: 0;padding-top: 1rem;">DJing</h3>
+                </div>
+                <div class="col-md-4">
+                    <div></div><video class="vid-2" controls="" width="100%" height="100%" autoplay="" loop="" muted="">
+                        <source src="C:\Users\hayle\Videos\WEbsite\plant.mp4" type="video/webm">
+                    </video>
+                    <h3 class="vid-2-heading" style="text-align: center;margin-bottom: 0;padding-bottom: 0;padding-top: 1rem;">Gardening</h3>
+                </div>
+                <div class="col-md-4">
+                    <div class="cool-hover"></div><video class="vid-3" controls="" width="100%" height="100%" autoplay="" loop="" muted="">
+                        <source src="C:\Users\hayle\Videos\WEbsite\ableton.mp4" type="video/mp4">
+                    </video>
+                    <h3 class="vid-3-heading" style="text-align: center;margin-bottom: 0;padding-bottom: 0;padding-top: 1rem;">Production</h3>
                 </div>
             </div>
         </div>
     </header>
     <section class="py-5" style="height: auto;">
-        <div class="container text-center py-5" style="padding-top: 12px;">
+        <div class="container text-center py-5" style="padding-top: 12px;height: 320.737px;">
             <h1><strong><span style="color: rgb(64, 230, 98);">3rd</span></strong>&nbsp;yr&nbsp;<strong>B.E&nbsp;</strong>&nbsp;(Mech &amp; Material) Student<br></h1>
-            <p class="mb-4-alt" style="font-size: 1.6rem;">University of Queensland (<strong>UQ</strong>)<br></p>
-            <p class="mb-4" style="font-size: 1.0rem;margin-bottom: 0;">Top&nbsp;<strong><span style="color: rgb(64, 230, 104);">3</span></strong>&nbsp;Engineering Universities in Oceania - Edurank.org, 2023<br></p><a href="#"> <img class="m-3" src="assets/img/brands/google.png"></a><a href="#"> <img class="m-3" src="assets/img/brands/microsoft.png"></a><a href="#"> <img class="m-3" src="assets/img/brands/apple.png"></a><a href="#"> <img class="m-3" src="assets/img/brands/facebook.png"></a><a href="#"> <img class="m-3" src="assets/img/brands/twitter.png"></a>
+            <p class="mb-4-alt" style="font-size: 1.6rem;"><img class="m-3" src="assets/img/brands/Uq%20logo.svg" style="width: 250px;"><br></p>
+            <p class="mb-4" style="font-size: 1.0rem;margin-bottom: 0;">Top&nbsp;<strong><span style="color: rgb(64, 230, 104);">3</span></strong>&nbsp;Engineering Universities in Oceania - Edurank.org, 2023<br>Top <strong><span style="color: rgb(64, 230, 104);">50&nbsp;</span></strong>Universities globally -&nbsp;QS World University Rankings, 2024<br></p>
+            <p class="mb-4-alt" style="font-size: 1.6rem;">Semester 1 2023, GPA:&nbsp;<strong><span style="color: rgb(64, 230, 104);">6.25</span></strong>&nbsp; (Full time)<br></p><a href="#"> </a>
         </div>
     </section>
     <section class="d-flex flex-grow-1" style="height: auto;">
@@ -92,13 +118,13 @@
                             <div class="d-flex skills html skill-bar" data-aos="slide-right" data-aos-duration="2000" style="background: #3D77FF;width: 95%;"><input class="form-control-plaintext" type="text" data-aos="fade" data-aos-duration="1500" data-aos-delay="500" value="90%" readonly=""></div>
                         </div>
                         <div class="ag-skills-container" style="width: 100%;overflow: hidden;height: 40%;">
-                            <div class="d-flex skills html skill-bar" data-aos="slide-right" data-aos-duration="2000" style="background: #40E668;width: 90%;"><input class="form-control-plaintext" type="text" data-aos="fade" data-aos-duration="1500" data-aos-delay="500" value="80%" readonly=""></div>
+                            <div class="d-flex skills html skill-bar" data-aos="slide-right" data-aos-duration="2000" style="background: #40E668;width: 70%;"><input class="form-control-plaintext" type="text" data-aos="fade" data-aos-duration="1500" data-aos-delay="500" value="70%" readonly=""></div>
                         </div>
                         <div class="ag-skills-container" style="width: 100%;overflow: hidden;height: 40%;">
-                            <div class="d-flex skills html skill-bar" data-aos="slide-right" data-aos-duration="2000" style="background: #FFCE85;width: 85%;"><input class="form-control-plaintext" type="text" data-aos="fade" data-aos-duration="1500" data-aos-delay="500" value="70%" readonly=""></div>
+                            <div class="d-flex skills html skill-bar" data-aos="slide-right" data-aos-duration="2000" style="background: #FFCE85;width: 65%;"><input class="form-control-plaintext" type="text" data-aos="fade" data-aos-duration="1500" data-aos-delay="500" value="65%" readonly=""></div>
                         </div>
                         <div class="ag-skills-container" style="width: 100%;overflow: hidden;height: 40%;">
-                            <div class="d-flex skills html skill-bar" data-aos="slide-right" data-aos-duration="2000" style="background: #ff72c0;width: 85%;"><input class="form-control-plaintext" type="text" data-aos="fade" data-aos-duration="1500" data-aos-delay="500" value="40%" readonly=""></div>
+                            <div class="d-flex skills html skill-bar" data-aos="slide-right" data-aos-duration="2000" style="background: #ff72c0;width: 60%;"><input class="form-control-plaintext" type="text" data-aos="fade" data-aos-duration="1500" data-aos-delay="500" value="60%" readonly=""></div>
                         </div>
                     </div>
                 </div>
@@ -175,55 +201,18 @@
             </div>
         </div>
     </section>
-    <section class="py-5 mt-5">
-        <div class="container py-5">
-            <div class="row mb-5">
-                <div class="col-md-8 col-xl-6 text-center mx-auto">
-                    <p class="fw-bold text-success mb-2">using Bootstrap &amp; GitHub</p>
-                    <h2 class="fw-bold"><strong>I built this website for free</strong></h2>
-                    <p class="text-muted">and it was an absolute pain</p>
-                </div>
-            </div>
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 d-sm-flex justify-content-sm-center">
-                <div class="col mb-4">
-                    <div class="d-flex flex-column align-items-center align-items-sm-start">
-                        <p class="bg-dark border rounded border-dark p-4">Nisi sit justo faucibus nec ornare amet, tortor torquent. Blandit class dapibus, aliquet morbi.</p>
-                        <div class="d-flex"><img class="rounded-circle flex-shrink-0 me-3 fit-cover" width="50" height="50" src="assets/img/team/avatar2.jpg">
-                            <div>
-                                <p class="fw-bold text-primary mb-0">John Smith</p>
-                                <p class="text-muted mb-0">Erat netus</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col mb-4">
-                    <div class="d-flex flex-column align-items-center align-items-sm-start">
-                        <p class="bg-dark border rounded border-dark p-4">Nisi sit justo faucibus nec ornare amet, tortor torquent. Blandit class dapibus, aliquet morbi.</p>
-                        <div class="d-flex"><img class="rounded-circle flex-shrink-0 me-3 fit-cover" width="50" height="50" src="assets/img/team/avatar4.jpg">
-                            <div>
-                                <p class="fw-bold text-primary mb-0">John Smith</p>
-                                <p class="text-muted mb-0">Erat netus</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col mb-4">
-                    <div class="d-flex flex-column align-items-center align-items-sm-start">
-                        <p class="bg-dark border rounded border-dark p-4">Nisi sit justo faucibus nec ornare amet, tortor torquent. Blandit class dapibus, aliquet morbi.</p>
-                        <div class="d-flex"><img class="rounded-circle flex-shrink-0 me-3 fit-cover" width="50" height="50" src="assets/img/team/avatar5.jpg">
-                            <div>
-                                <p class="fw-bold text-primary mb-0">John Smith</p>
-                                <p class="text-muted mb-0">Erat netus</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <div style="margin-top: 3rem;width: 100%;">
+        <div class="row mb-5" style="width: 100%;margin-right: 0;margin-left: 0;">
+            <div class="col-md-8 col-xl-6 text-center mx-auto">
+                <p class="fw-bold text-success mb-2">using Bootstrap &amp; GitHub</p>
+                <h2 class="fw-bold"><strong>I built this website for free</strong></h2>
+                <p class="text-muted" style="border-color: var(--bs-orange);color: rgba(176,189,211,0.2);">and it was an absolute pain</p>
             </div>
         </div>
-    </section>
+    </div>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/script.min.js"></script>
-    <script src="assets/js/aos.min.min.js"></script>
+    <script src="assets/js/aos.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,58 @@
+.mb-4-alt {
+  margin-bottom: 0;
+}
+
+@media (min-width: 1200px) {
+  .py-xl-5-alt {
+    padding: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+video:hover {
+  transform: scale(1.1);
+}
+
+video {
+  transform: scale(1);
+  transition: transform 0.4s ease-in-out;
+  z-index: 990;
+}
+
+video:after {
+  transform: scale(1);
+}
+
+.vid-1:hover ~ .vid-1-heading {
+  opacity: 1;
+}
+
+.vid-2:hover ~ .vid-2-heading {
+  opacity: 1;
+}
+
+.vid-3:hover ~ .vid-3-heading {
+  opacity: 1;
+}
+
+.vid-3-heading {
+  opacity: 0;
+  transition: all 0.4s;
+}
+
+.vid-2-heading {
+  opacity: 0;
+  transition: all 0.4s;
+}
+
+.vid-1-heading {
+  opacity: 0;
+  transition: all 0.4s;
+  z-index: 999;
+}
+
+text-muted {
+  opacity: 0.2;
+}
+

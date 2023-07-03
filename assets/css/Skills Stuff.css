@@ -1,0 +1,27 @@
+.ag-skills-container {
+  width: 100%;
+  background-color: #ddd;
+}
+
+.skill-bar {
+  text-align: right;
+  color: white;
+  height: 100%;
+  padding-right: 0;
+  background: #40e662;
+  width: 65%;
+}
+
+.ag-container {
+  margin: auto;
+  width: 85%;
+  padding: 20px;
+}
+
+.form-control-plaintext {
+  color: white;
+  text-align: right;
+  font-weight: bold;
+  padding-right: 18px;
+}
+
